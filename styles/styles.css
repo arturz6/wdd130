@@ -1,0 +1,46 @@
+img {
+    width: 300px;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    background-color: beige;
+}
+
+content {
+       max-width: 1600px;
+       margin: 0 auto
+}
+
+header, footer {
+    background-color: rgb(250, 250, 250);
+    padding: 20px
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(23, 181, 189);
+
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    color: rgba(35, 104, 109, 0.587);
+}
+
+p {
+    font-size: 1em;
+}
+
+.coloring {
+    color: red
+}
+
+#second {
+    color: green
+}
