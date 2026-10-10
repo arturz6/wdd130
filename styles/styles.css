@@ -1,5 +1,7 @@
 img {
     width: 300px;
+    border-radius: 50%;
+    box-shadow: .75px .75px .75px rgb(0, 0, 0);
 }
 
 body {
