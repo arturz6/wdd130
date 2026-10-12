@@ -1,0 +1,60 @@
+body {
+    background-color: #ffecd7;
+}
+
+#card {
+    border: 5px solid #004E63;
+    border-radius: 30px;
+    background-color: #008DB1;
+    width: 450px;
+    height: 750px;
+    margin: 40px auto;
+}
+
+.image {
+    width: 350px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: 5px solid white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    margin-top: 20px;
+    font-family: Helvetica;
+}
+
+.subtitle {
+    display: block;
+    text-align: center;
+    font-size: 1.25em;
+    color: #91e4fb;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.subtitle:hover {
+    text-decoration: underline;
+}
+
+.list {
+    text-align: left;
+    font-size: 1.25em;
+    color: white;
+    margin: 0 auto;
+    width: fit-content;
+    font-family: Helvetica;
+}
+
+.quote {
+    text-align: center;
+    font-size: 1.25em;
+    color: #ffd783;
+    margin-top: 40px;
+    font-family: Nanum Brush Script;
+}
