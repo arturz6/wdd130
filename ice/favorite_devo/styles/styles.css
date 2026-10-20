@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #d3d3d3, #001f3f);
+  background-repeat: no-repeat; /* Just in case */
+  background-attachment: fixed;
+}
+
+.container {
+  text-align: center;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.header-image {
+  background-image: url('../images/icenter.png'); /* Replace with your image */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+
+}
+
+.header-image h1 {
+  margin: 0;
+  line-height: 0.9;
+    font-size: 3.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background: #00000055;
+}
+
+.content-box {
+  background-color: white;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 900px;
+  padding: 40px;
+  box-shadow: 5px 5px 0px black;
+  min-height: 400px;
+  border-radius: 12px;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+}
+
+td, th {
+  border: 1px solid #a19f9f;
+  text-align: left;
+  padding: 8px;
+}
+
+.form {
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+input[type="text"] {
+  max-width: 500px;
+  width: 100%;
+  padding: 6px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+  outline:none;
+}
+
+input[type="text"]:focus {
+  border: 1px solid #001f3f;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: #001f3f;
+    color:white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3;
+}
+
+input[type="submit"]:hover {
+  background-color: #24476a;
+}
+
+label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #263747;
+}
+
+th {
+  background-color: #001f3f;
+  color: white
+}
+
+tr:nth-child(even) {
+  background-color: #f0f4f8;
+}
+
+tr:hover {
+  background-color: #dce6f0;
+}
+
+h2 {
+  color: #001f3f;
+  font-size: 26px;
+  border-bottom: 2px solid #dce6f0;
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+}
