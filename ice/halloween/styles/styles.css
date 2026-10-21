@@ -1,0 +1,152 @@
+/* Add your CSS here to style your halloween page */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Space+Mono&display=swap');
+
+body {
+    background-color: #17121F;
+    background-image: linear-gradient(
+        rgba(23, 18, 31, 0.35),
+        rgba(23, 18, 31, 0.65)
+    ), url("https://w.wallhaven.cc/full/2k/wallhaven-2k9x86.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    justify-content: center;
+}
+
+ul li {
+    text-align: center;
+    color: #E9D5A8;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 14px 40px;
+    border: 3px solid #000000;
+    border-radius: 12px;
+    background-color: #39234F;
+    box-shadow: 3px 3px 0px black;
+    cursor: pointer;
+}
+
+ul li:hover {
+    background-color: #E97824;
+    color: #17121F;
+    transform: translateY(-3px);
+    transition: 0.25s;
+}
+
+h1 {
+    font-family: 'Creepster', cursive;
+    font-size: 80px;
+    text-align: center;
+    color: #E97824;
+    -webkit-text-stroke: 2px #17121F;
+    text-shadow: 5px 5px 0px #39234F;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h1:hover {
+    text-shadow: 0 0 15px #E97824,
+                 0 0 30px #E97824;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: 'Creepster', cursive;
+    font-size: 36px;
+    color: #E97824;
+    -webkit-text-stroke: 1px #17121F;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+section p {
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #E9D5A8;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+    padding: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+main h1, main img {
+    grid-column: 1 / -1;
+}
+
+section {
+    background-color: #39234F;
+    border: 3px solid #000000;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 3px 3px 0px #000000;
+}
+
+section {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section:hover {
+    transform: translateY(-8px);
+    box-shadow: 6px 6px 6px #E97824;
+}
+
+main img {
+    display: block;
+    margin: 30px auto;
+    max-width: 90%;
+    height: auto;
+    filter: drop-shadow(0 0 15px #E97824);
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: rgba(23, 18, 31, 0.50);
+    border: 4px solid #E97824;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #E97824;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    color: #E9D5A8;
+    background-color: #39234F;
+    padding: 20px;
+    margin-top: 60px;
+    border-top: 3px dashed #E97824;
+    border-radius: 0 0 10px 10px;
+    font-size: 14px;
+}
+
