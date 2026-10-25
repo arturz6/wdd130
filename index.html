@@ -3,35 +3,79 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portal Page</title>
-        <link href="styles/styles.css" rel="stylesheet">
+        <meta name="description" content="Arturo Chomba's personal portfolio and Web Fundamentals assignments.">
+        <title>Arturo Chomba | Portfolio</title>
+        <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
-        <div id="content">
-            <header>
-                <nav>
-                    <a href="http://www.byui.edu" target="_blank">My University</a>
-                    <a href="https://www.youtube.com" target="_blank">Youtube</a>
-                    <a href="wwr/index.html" target="_blank">Home</a>
-                    
-                </nav>
-                <!--Comments-->
-            </header>
-            <main>
-                <h1>Arturo Chomba</h1>
-                <h2>Hello</h2>
-                <h3>Hello</h3>
-                <h4>Hello</h4>
-                <h5>Hello</h5>
-                <h6>Hello</h6>
-                <img src="images/cat3.JPG" alt="Cat laying in bed">
-                <p id="second">Im leaving.</p>
-                <p>im going fishing <span class="coloring">right now</span> ill see you later</p>
-            </main>
-            <footer>
-                <p>Goodbye</p>
-                <p></p>
-            </footer>
-         </div>
+        <header id="home">
+            <a href="#home" class="logo"><img src="/portfolio/images/logo.png" alt="Logo" style="width: 100px;"></a>
+            <nav aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#assignments">WWR</a>
+                <a href="#assignments">ICE</a>
+                <a href="#about">About Me</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="hero-text">
+                    <h1>Portal Page<br>Arturo Chomba</h1>
+                    <p>Welcome to my personal portfolio! Here you can explore my web development assignments, projects, and learn more about me.</p>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero.jpg" alt="Portfolio introduction image">
+                </div>
+            </section>
+            <section id="about" class="about">
+                <h2>About Me</h2>
+                <div class="about-container">
+                    <div class="about-column">
+                        <p>Hello! I'm Arturo, a cybersecurity student interested in technology, programming, and web development.</p>
+                        <p>I enjoy learning new skills and exploring creative ways to use technology.</p>
+                        <img src="images/about1.jpg" alt="My interests">
+                    </div>
+                    <div class="about-column">
+                        <p>This website is part of my Web Fundamentals course, where I practice building websites using HTML and CSS.</p>
+                        <p>My goal is to continue improving my skills and creating projects that reflect my interests.</p>
+                        <img src="images/about2.jpg" alt="My web development journey">
+                    </div>
+                </div>
+            </section>
+            <section id="projects" class="projects">
+                <h2>Projects</h2>
+                <div class="project-container">
+                    <button class="previous" type="button" aria-label="Previous project">❮</button>
+                    <div class="project-content">
+                        <h3>My Projects</h3>
+                        <p>Here you can explore some of the websites and projects I have created while learning web development.</p>
+                        <img src="images/project1.jpg" alt="Project preview">
+                    </div>
+                    <button class="next" type="button" aria-label="Next project">❯</button>
+                </div>
+            </section>
+            <section id="assignments" class="assignments">
+                <h2>Assignments</h2>
+                <p>Explore the webpages I have created for my Web Fundamentals class.</p>
+                <div class="assignment-buttons">
+                    <a href="/wwr/index.html" target="_blank" class="assignment-btn">WWR</a>
+                    <a href="/portfolio/ice_page/index.html" class="assignment-btn">ICE</a>
+                </div>
+            </section>
+            <section id="contact" class="contact">
+                <h2>Contact</h2>
+                <p>Have a question or want to get in touch? Feel free to contact me!</p>
+                <a href="mailto:arturzubiate@gmail.com" class="contact-btn">Get in Touch</a>
+            </section>
+        </main>
+        <footer>
+            <nav aria-label="Footer navigation">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+            </nav>
+            <p>© 2026 Arturo Chomba. All rights reserved.</p>
+        </footer>
     </body>
 </html>
