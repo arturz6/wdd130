@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+    --background: #F5F7FA;
+    --secondary: #E3EAF2;
+    --accent: #597B9C;
+    --text: #263747;
+    --white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--text);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.ice-assignments {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 30px;
+}
+
+.ice-assignments h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ice-assignments > p {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 50px;
+}
+
+.ice-assignments ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 20px;
+}
+
+.ice-assignments li {
+    background-color: var(--white);
+    border: 1px solid var(--secondary);
+    border-radius: 12px;
+    padding: 25px 30px;
+    box-shadow: 0 4px 15px rgba(38, 55, 71, 0.05);
+}
+
+.ice-assignments li a {
+    color: var(--text);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.ice-assignments li p {
+    color: var(--accent);
+    font-size: 0.95rem;
+    margin: 10px 0 0;
+    line-height: 1.7;
+}
+
+.ice-assignments li {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ice-assignments li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(38, 55, 71, 0.12);
+}
+
+.ice-assignments li a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    .ice-assignments {
+        padding: 50px 5%;
+    }
+
+    .ice-assignments li {
+        padding: 20px;
+    }
+
+    .ice-assignments li a {
+        font-size: 1.1rem;
+    }
+}
+header {
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 8%;
+    border-bottom: 1px solid var(--secondary);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    position: absolute;
+    left: 8%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px !important;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 8px 18px;
+    border: 1px solid var(--secondary);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-family: 'DM Sans', sans-serif;
+}
+
+header nav a:hover {
+    background-color: var(--accent);
+    color: var(--white);
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: var(--text);
+    color: var(--white);
+    padding: 40px 8%;
+    text-align: center;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 25px;
+}
+
+footer nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+    color: #A9C1D8;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: var(--secondary);
+    margin: 0;
+    padding-top: 20px;
+    border-top: 1px solid #526474;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        position: static;
+    }
+
+    header nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    header nav a {
+        font-size: 0.85rem;
+        padding: 7px 12px;
+    }
+
+    footer nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .logo {
+    position: static;
+    }
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+header {
+    min-height: 65px;
+}
+
+.logo img {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
