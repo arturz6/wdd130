@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(120, 96, 64);
+}
+
+#formContainer {
+    background-color: white;
+    border: 8px solid #0d2384;
+    border-radius: 25px;
+    width: 500px;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.formImage {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-radius: 17px 17px 0 0;
+}
+
+.formHeader {
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: normal;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#myForm {
+    text-align: left;
+    padding-left: 40px;
+    padding-bottom: 30px;
+}
+
+#myForm div {
+    display: inline-block;
+    margin-right: 95px;
+    float: right;
+}
+
+#myForm label {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+#myForm input[type="text"],
+#myForm input[type="password"],
+#myForm input[type="email"] {
+    float: right;
+    padding-right: 40px;
+    margin-right: 40px;
+}
+
+#myForm section {
+    text-align: center;
+    position: relative;
+    left: -20px;
+}
+
+#myForm section:last-of-type {
+    padding-bottom: 40px;
+}
+
+.formFooter { 
+    display: flex;
+    justify-content: center;
+    gap: 5px
+}
+
+.formFooter img {
+    width: 19%;
+    height: auto;
+}
